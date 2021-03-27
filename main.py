@@ -6,6 +6,7 @@ bot = telegram.Bot(token=TOKEN)
 
 
 print(bot.get_webhook_info())
+print(bot.set_webhook(url='https://motof.pythonanywhere.com/'))
 
 
     # dispatcher = Dispatcher(bot,None,workers=0)
