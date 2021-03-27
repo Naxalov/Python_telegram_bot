@@ -1,7 +1,16 @@
 
 import telegram
 TOKEN = '1602686596:AAGByzpMndN5gTZyPX-0Md5TNl21-pZ5pdc'
+
 bot = telegram.Bot(token=TOKEN)
 
 
-bot.send_message(chat_id=86775091,text='Hi')
+print(bot.get_webhook_info())
+
+
+    # dispatcher = Dispatcher(bot,None,workers=0)
+
+    # update = telegram.Update.de_json(request.get_json(force=True), bot)
+    # dispatcher.add_handler(MessageHandler(Filters.text, hi))
+
+    # dispatcher.process_update(update)
